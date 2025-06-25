@@ -6,44 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixelUp | Designs that Speak</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Navbar -->
     <nav>
         <div class="logo-container">
-            <img src="logo.svg" alt="PixelUp Logo">
+            <img src="logo.svg" alt="PixelUp Logo" />
             <span>PixelUp</span>
         </div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <div class="nav-links" id="navLinks">
+        <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </nav>
+
+    <!-- sidebar for mobile view -->
+    <div class="side-menu" id="sideMenu">
+        <div class="close-btn" onclick="toggleMenu()">✕</div>
+        <a href="#home" onclick="toggleMenu()">Home</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <img src="logo.svg" alt="Logo" style="max-width: 150px; margin-bottom: 1.5rem; border-radius: 50%; box-shadow: 0 0 14px #6366f1;" />
+        <img src="logo.svg" alt="Logo" />
         <h1>Designs That Speak</h1>
         <p>We create bold, memorable designs that leave a lasting impression on your audience.</p>
     </section>
 
     <!-- Services -->
     <section class="section" id="services">
-        <h2>Our Services</h2>
+        <h2 style="margin-top: 20px;">Our Services</h2>
         <div class="services-grid">
             <div class="card">
-                <img src="default-image.png" alt="Logo Design">
+                <img src="logo-design.png" alt="Logo Design">
                 <div class="card-body">
                     <h3>Logo Design</h3>
                     <p>Crafted to reflect your brand's personality and values with lasting visual impact.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="default-image.png" alt="Label Design">
+                <img src="label-design.jpeg" alt="Label Design">
                 <div class="card-body">
                     <h3>Label Design</h3>
                     <p>Attractive and professional labels that enhance product appeal and market presence.</p>
@@ -54,7 +66,7 @@
 
     <!-- About -->
     <section class="section" id="about" style="background:#f3f4f6;">
-        <h2>About Us</h2>
+        <h2 style="margin-top: 20px;">About Us</h2>
         <p style="max-width: 600px; margin: 1rem auto;">
             PixelUp is a passionate graphic design startup focused on crafting visual stories that resonate. We combine
             creativity with strategy to deliver branding solutions that truly speak to your audience.
@@ -63,41 +75,57 @@
 
     <!-- Contact -->
     <section class="section" id="contact">
-        <h2 style="margin-bottom: 20px;">Contact Us</h2>
-        <form class="contact-form" onsubmit="handleSubmit(event)">
+        <h2 style="margin: 20px 0;">Contact Us</h2>
+        <form class="contact-form" onsubmit="sendToEmail(event)">
             <input type="text" id="name" placeholder="Your Name" required />
             <input type="email" id="email" placeholder="Your Email" required />
             <input type="text" id="phone" placeholder="Your Phone Number" required />
             <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Submit</button>
+            <!-- <button type="submit" class="btn">Submit</button> -->
 
             <div class="button-row">
-                <button type="button" onclick="sendToWhatsApp()">
-                    <img src="phone.svg" alt="Phone Icon" /> WhatsApp
+                <button type="submit">
+                    <img src="email.svg" alt="Email Icon" /> Send Email
                 </button>
-                <button type="button" onclick="sendToEmail()">
-                    <img src="email.svg" alt="Email Icon" /> Email
+                <button type="button" onclick="sendToWhatsApp()">
+                    <img src="phone.svg" alt="Phone Icon" /> Open WhatApp chat
                 </button>
             </div>
-
         </form>
     </section>
 
     <!-- Footer -->
     <footer>
         <div>PixelUp</div>
+
         <div style="margin: 1rem 0;">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
-        <div>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://behance.net" target="_blank">Behance</a>
+
+        <!-- Social Icons Row -->
+        <div style="display: flex; justify-content: center; gap: 1.5rem; align-items: center; font-size: 1.4rem;">
+            <a href="https://instagram.com/harminv00/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram" style="color: #E1306C;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/harmin-vekariya-908509254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin" style="color: #0077B5;"></i>
+            </a>
+            <a href="https://wa.me/918200571458" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vekariyaharmin96@gmail.com" target="_blank"
+                rel="noopener noreferrer" aria-label="Email">
+                <i class="fas fa-envelope" style="color: #EA4335;"></i>
+            </a>
         </div>
+
         <div style="margin-top: 1rem; font-size: 0.875rem;">&copy; 2025 PixelUp. All rights reserved.</div>
     </footer>
+
 
     <script src="script.js"></script>
 </body>
