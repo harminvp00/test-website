@@ -189,10 +189,11 @@ nav .logo-container span {
     display: flex;
     flex-direction: column;
     border-radius: 9px;
-    border: 1px solid black;
     width: 350px;
     height: 400px;
+    max-width: 100%;
     box-shadow: 0 0 4px var(--primary);
+    padding-bottom: 30px;
 }
 
 .service-cards .card .card-image {
@@ -235,6 +236,12 @@ nav .logo-container span {
     border-radius: 9px;
 }
 
+@media screen and (max-width:394px){
+    .service-cards .card{
+        height: 500px;
+    }
+}
+
 /* about sections css code  */
 #about {
     margin-top: 30px;
@@ -253,7 +260,7 @@ nav .logo-container span {
 
 /* Contact sections css codes */
 .contact-form {
-    max-width: 500px;
+    width: 50%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -304,6 +311,11 @@ nav .logo-container span {
     width: 20px;
 }
 
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 85%;
+    }   
+}
 
 footer {
     margin-top: 30px;
