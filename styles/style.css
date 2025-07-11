@@ -1,10 +1,10 @@
 
-
 :root {
     --accent: #6366f1;
     --button-bg: #6366f1;
     --button-hover: #FFF;
     --card-bg: #ffffff;
+    --footer: #0f172a;
     --gray: #94a3b8;
     --highlight: #DBF73D;
     --light: #f8fafc;
@@ -312,7 +312,7 @@ nav .logo-container span {
 /* footer css code  */
 footer {
     margin-top: 30px;
-    background: #0f172a;
+    background: var(--footer);
     color: white;
     padding: 2rem;
     text-align: center;
@@ -478,23 +478,22 @@ footer .copyright-statement {
 }
 
 .service-details .title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin: 10px 0;
 }
 
 .service-details p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .service-values {
     margin: 20px 0;
     padding: 10px 15px;
     color: var(--light);
-    background: var(--gray);
+    background: #0f172ae2;
     box-shadow: 0 0 2px var(--primary);
     border-radius: 5px;
-    font-size: 1.3rem;
     font-weight: 600;
     transition: transform 0.4s ease;
 }
@@ -505,7 +504,7 @@ footer .copyright-statement {
 
 .service-values h4 {
     margin: 8px 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
