@@ -489,17 +489,12 @@ footer .copyright-statement {
 
 .service-values {
     margin: 20px 0;
-    padding: 10px 15px;
+    padding: 15px 30px;
     color: var(--light);
     background: #0f172ae2;
     box-shadow: 0 0 2px var(--primary);
     border-radius: 5px;
     font-weight: 600;
-    transition: transform 0.4s ease;
-}
-
-.service-values:hover {
-    transform: scale(1.05);
 }
 
 .service-values h4 {
