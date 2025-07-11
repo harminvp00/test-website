@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "description": "Create a unique and professional logo that represents your brand identity.",
+        "gallery": [
+            "../images/services/logo/logo-1.png", 
+            "../images/services/logo/logo-2.webp", 
+            "../images/services/logo/logo-3.jpeg", 
+            "../images/services/logo/logo-4.png", 
+            "../images/services/logo/logo-5.png", 
+            "../images/services/logo/logo-6.png"
+            
+        ],
+        "path": "images/services/logo/logo-5.png",
+        "title": "Logo Design",
+        "moreDetails": [
+            {
+                "content": "Best Logo",
+                "Available": true
+            },
+            {
+                "content": "Low Price",
+                "Available": true
+            },
+            {
+                "content": "Revision",
+                "Available": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "description": "Create a unique and professional label that represents your brand identity.",
+        "gallery": [
+            "../images/services/label/label-1.jpeg",
+            "../images/services/label/label-2.jpeg",
+            "../images/services/label/label-3.jpeg",
+            "../images/services/label/label-4.jpeg",
+            "../images/services/label/label-5.jpeg",
+            "../images/services/label/label-6.jpeg"
+        ],
+        "path": "images/services/label/label-4.jpeg",
+        "title": "Label Design",
+        "moreDetails": [
+            {
+                "content": "Best Label Design Work",
+                "Available": true
+            },
+            {
+                "content": "Moderate Price, Better Qulity",
+                "Available": true
+            },
+            {
+                "content": "Revision are available",
+                "Available": false
+            }
+        ]
+    }
+]
