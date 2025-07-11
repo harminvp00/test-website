@@ -79,6 +79,7 @@ function load_Single_Service(serviceId) {
 
             // first adding a title 
             if (mainServiceTitle) {
+                document.title = `PixelUp - ${service.title}`;
                 mainServiceTitle.innerText = `Our Work in ${service.title}`;
             }
 
