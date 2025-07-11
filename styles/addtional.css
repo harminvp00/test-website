@@ -49,11 +49,11 @@
         width: 100%;
     }
 
-    .service-details{
+    .service-details {
         width: 100%;
     }
 
-    #custom-divider{
+    #custom-divider {
         width: 100%;
     }
 }
@@ -114,6 +114,11 @@
     .response button img {
         width: 20px;
         height: 20px;
+    }
+
+    /* setup the images for mobile screens  */
+    .service-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }
 
